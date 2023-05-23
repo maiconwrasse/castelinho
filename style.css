@@ -32,6 +32,7 @@ body {
     height: 90vh;
     display: grid;
     grid-template-columns: 50% 50%;
+    margin: 3em 6em 2em 6em;
 }
 
 .titulo_principal {
