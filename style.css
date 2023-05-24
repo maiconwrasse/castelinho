@@ -90,13 +90,15 @@ body {
     color: var(--cor-secundaria);
     font-size: 40px;
     margin-top: 2em;
+    margin-bottom: 2em;
+    transition: .3s;
 }
 
 .patrocinadores_lista {
     display: flex;
     justify-content:space-around;
     list-style-type: none;
-    margin: 2em 5em 3em 5em;
+    margin: 0 5em 0 5em;
     transition: .3s;
 }
 
@@ -148,3 +150,21 @@ body {
     transform: translate3d(0, -10px, 0) scale(1.01);
     transition: .3s;
 }
+
+.patrocinadores_titulo:hover {
+    color: var(--cor-principal);
+    transform: translate3d(0, -10px, 0) scale(1.01);
+    transition: .3s;
+}
+
+@media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
+  }
