@@ -32,7 +32,7 @@ body {
     height: 90vh;
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: 3em 6em 2em 6em;
+    margin: 2em 6em 2em 6em;
 }
 
 .titulo_principal {
@@ -51,14 +51,21 @@ body {
     font-size: 17px;
     margin: 1em 0;
     text-align: center;
+    transition: .3s;
 }
 
 .container_imagem {
     margin: 1em 0 2em 0;
+    transition: .3s;
 }
 
 .secundario_imagem {
     width: 80%;
+    transition: .3s;
+}
+
+.secundario_descricao {
+    transition: .3s;
 }
 
 .secundario {
@@ -90,6 +97,7 @@ body {
     justify-content:space-around;
     list-style-type: none;
     margin: 2em 5em 3em 5em;
+    transition: .3s;
 }
 
 .patrocinadores {
@@ -108,3 +116,35 @@ body {
     padding: 2em;
 }
 
+.botao_redes:hover {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
+    transform: translate3d(0, -10px, 0) scale(1.01);
+    transition: .3s;
+}
+
+.botao_redes:active {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+}
+
+.patrocinadores_lista:hover {
+    transform: translate3d(0, -10px, 0) scale(1.01);
+    transition: .3s;
+}
+
+.container_imagem:hover {
+    transform: translate3d(0, -10px, 0) scale(1.01);
+    transition: .3s;
+}
+
+.secundario_imagem:hover {
+    transform: translate3d(0, -10px, 0) scale(1.01);
+    transition: .3s;
+}
+
+.secundario_descricao:hover {
+    transform: translate3d(0, -10px, 0) scale(1.01);
+    transition: .3s;
+}
